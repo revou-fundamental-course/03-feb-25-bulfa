@@ -70,7 +70,7 @@ function tukar() {
         }
 
         // bagian penjelasan
-        penjelasan.innerHTML = "<h2>Cara Konversi Dari Fahrenheit (&deg;F)  ke Celcius (&deg;C)</h2><hr><p>Suhu <span class='simbol'>S</span> dalam derajat Celcius (&deg;C) sama dengan suhu <span class='simbol'>S</span> dalam derajat Fahrenheit (&deg;F) dikurangi <span class='angka'>32</span> dulu, lalu kali <span class='angka'>5/9</span>.</p>";
+        penjelasan.innerHTML = "<h3>Cara Konversi Dari Fahrenheit (&deg;F)  ke Celcius (&deg;C)</h3><hr><p>Suhu <span class='simbol'>S</span> dalam derajat Celcius (&deg;C) sama dengan suhu <span class='simbol'>S</span> dalam derajat Fahrenheit (&deg;F) dikurangi <span class='angka'>32</span> dulu, lalu kali <span class='angka'>5/9</span>.</p>";
 
         //bagian rumus
         rumus.innerHTML = `<p>
@@ -96,7 +96,7 @@ function tukar() {
         }
 
         // bagian penjelasan
-        penjelasan.innerHTML = "<h2>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2><hr><p>Suhu <span class='simbol'>S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span class='simbol'>S</span> dalam derajat Celcius (&deg;C) kali <span class='angka'>9/5</span> tambah <span class='angka'>32</span>.</p>";
+        penjelasan.innerHTML = "<h3>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h3><hr><p>Suhu <span class='simbol'>S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span class='simbol'>S</span> dalam derajat Celcius (&deg;C) kali <span class='angka'>9/5</span> tambah <span class='angka'>32</span>.</p>";
 
         //bagian rumus
         rumus.innerHTML = "<div class='rumus'>               <p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 9/5) + 32</p><p>atau</p><p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 1.8) + 32</p></div>"
