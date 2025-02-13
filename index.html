@@ -35,9 +35,9 @@
                     <input type="number" id="inputan" placeholder="Masukkan suhu antara 0 sampai 100" autofocus>
                 </div>
                 <div class="grup-tombol">
-                    <button type="button" onclick="konversi()">Konversi</button>
-                    <button type="button" onclick="ulang()">Reset</button>
-                    <button type="button" onclick="tukar()">Reverse</button>
+                    <button type="button" class="gaya-tombol" onclick="konversi()">Konversi</button>
+                    <button type="button" class="gaya-tombol" onclick="ulang()">Reset</button>
+                    <button type="button" class="gaya-tombol" onclick="tukar()">Reverse</button>
                 </div>
              </form>
         </section>
@@ -46,7 +46,7 @@
         <section>
             <div class="grup-input">
                 <label for="outputan" class="outputan">Fahrenheit &deg;F :</label>
-                <input type="text" id="outputan" readonly>
+                <input type="text" id="outputan" placeholder="Hasil Konversi" readonly>
             </div>
         </section>
         
@@ -54,7 +54,7 @@
         <section>
             <div class="grup-input">
                 <label for="cara-kalkulasi" class="cara-kalkulasi">Cara Kalkulasi :</label>
-                <input type="text" id="cara-kalkulasi" readonly>
+                <input type="text" id="cara-kalkulasi" placeholder="Rumus yang dipakai" readonly>
             </div>
         </section>
 

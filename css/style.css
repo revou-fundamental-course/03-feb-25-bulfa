@@ -3,6 +3,8 @@
 /* Mengubah font*/
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #222831;
+    color: #EEEEEE;
 }
 
 header {
@@ -11,9 +13,9 @@ header {
 
 /* Memperbaiki tampilan sesuai mockup */
 main {
-    background-color: lightgray;
+    background-color: #393E46;
     width: 750px;
-    border: 5px solid black;
+    border: 5px solid #00ADB5;
     border-radius: 50px;
     justify-self: center;
     padding: 10px;
@@ -31,20 +33,35 @@ main {
     height: 50px;
     padding: 10px;
     font-size: 30px;
-    border: 5px solid black;
+    border: 5px solid #00ADB5;
 }
 
 .grup-tombol {
     padding: 10px;
+    text-align: center;
 }
 
+/* bagian grup tombol */
 .grup-tombol button {
     font-size: 30px;
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    padding: 10px;
+    border: 10px solid #222831;
+}
+
+.grup-tombol button:hover {
+    cursor: pointer;
+    background-color: #00acb550;
+}
+
+.grup-tombol button:active {
+    background-color: #393E46;
 }
 
 /* Memperbaiki garis pemisah */
 hr {
-    border: 1px solid black;
+    border: 1px solid #00ADB5;
     width: 600px;
 }
 
