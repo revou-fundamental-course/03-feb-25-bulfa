@@ -1,1 +1,55 @@
 /* ini file css */
+
+/* Mengubah font*/
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+/* Memperbaiki tampilan sesuai mockup */
+main {
+    background-color: lightgray;
+    width: 500px;
+    border: 5px solid black;
+    border-radius: 50px;
+    justify-self: center;
+    padding: 10px;
+}
+
+/* Merapikan inputan */
+.grup-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.grup-input input {
+    height: 50px;
+}
+
+.grup-tombol {
+    padding: 10px;
+}
+
+/* Memperbaiki garis pemisah */
+hr {
+    border: 1px solid black;
+    width: 450px;
+}
+
+/*  */
+.penjelasan .simbol {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.penjelasan .angka {
+    font-size: 20px;
+}
+
+.rumus p {
+    font-size: 20px;
+}
