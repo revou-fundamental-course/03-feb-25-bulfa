@@ -12,11 +12,12 @@ header {
 /* Memperbaiki tampilan sesuai mockup */
 main {
     background-color: lightgray;
-    width: 500px;
+    width: 750px;
     border: 5px solid black;
     border-radius: 50px;
     justify-self: center;
     padding: 10px;
+    font-size: 30px;
 }
 
 /* Merapikan inputan */
@@ -28,29 +29,40 @@ main {
 
 .grup-input input {
     height: 50px;
-    font-size: 15px;
+    padding: 10px;
+    font-size: 30px;
+    border: 5px solid black;
 }
 
 .grup-tombol {
     padding: 10px;
 }
 
+.grup-tombol button {
+    font-size: 30px;
+}
+
 /* Memperbaiki garis pemisah */
 hr {
     border: 1px solid black;
-    width: 450px;
+    width: 600px;
+}
+
+/* Menengahkan judul dari penjelasan cara konversi */
+.penjelasan h2 {
+    text-align: center;
 }
 
 /* Simbol - simbol pada penjelasan */
 .penjelasan .simbol {
-    font-size: 25px;
+    font-size: 40px;
     font-style: italic;
 }
 
 .penjelasan .angka {
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .rumus p {
-    font-size: 20px;
+    font-size: 40px;
 }

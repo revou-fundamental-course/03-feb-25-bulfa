@@ -7,8 +7,9 @@ let outputan = document.getElementById('outputan');
 let caraKalkulasi = document.getElementById('cara-kalkulasi');
 let labelInputan = document.getElementsByClassName("inputan")[0];
 let labelOutputan = document.getElementsByClassName('outputan')[0];
-let caraKonversi = document.querySelector(".rumus p");
-console.log(caraKonversi);
+let penjelasan = document.querySelector('.penjelasan');
+let rumus = document.querySelector('.rumus');
+console.log(rumus);
 
 // Validasi dan konversi inputan
 function konversi() {
@@ -19,7 +20,7 @@ function konversi() {
         let suhu = inputan.value;
         if (suhu == "") {
             alert("Anda belum memasukkan angka");
-        } else if (suhu >= 100) {
+        } else if (suhu > 100) {
             alert("Anda memasukkan angka tidak sesuai dengan batasannya");
             inputan.value = "";
         } else {
@@ -33,7 +34,7 @@ function konversi() {
         let suhu = inputan.value;
         if (suhu == "") {
             alert("Anda belum memasukkan angka");
-        } else if (suhu <= 32 && suhu >= 212) {
+        } else if (suhu < 32 || suhu > 212) {
             alert("Anda memasukkan angka tidak sesuai dengan batasannya");
             inputan.value = "";
         } else {
@@ -64,20 +65,41 @@ function tukar() {
         inputanBaru = inputan.value;
         inputan.value = outputan.value;
         outputan.value = inputanBaru;
-        caraKalkulasi.value = `(${inputan.value}\u00B0 - 32) * 5 / 9 = ${outputan.value}`
+        if (inputan.value != "") {
+            caraKalkulasi.value = `(${inputan.value}\u00B0 - 32) * 5 / 9 = ${outputan.value}`
+        }
 
         // bagian penjelasan
-        caraKonversi.innerHTML = "S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 9/5) + 32"
+        penjelasan.innerHTML = "<h2>Cara Konversi Dari Fahrenheit (&deg;F)  ke Celcius (&deg;C)</h2><hr><p>Suhu <span class='simbol'>S</span> dalam derajat Celcius (&deg;C) sama dengan suhu <span class='simbol'>S</span> dalam derajat Fahrenheit (&deg;F) dikurangi <span class='angka'>32</span> dulu, lalu kali <span class='angka'>5/9</span>.</p>";
 
+        //bagian rumus
+        rumus.innerHTML = `<p>
+                    S<sub>(&deg;C)</sub> = (S<sub>(&deg;F)</sub> - 32) * 5/9
+                </p>
+                <p>
+                    atau
+                </p>
+                <p>
+                    S<sub>(&deg;C)</sub> = (S<sub>(&deg;F)</sub> - 32) * 5.6
+                </p>`;
 
     } else {
+        //bagian form
         labelInputan.innerHTML = "Celcius \u00B0C :";
         inputan.placeholder = "Masukkan suhu antara 0 sampai 100";
         labelOutputan.innerHTML = "Fahrenheit \u00B0F :";
         inputanBaru = inputan.value;
         inputan.value = outputan.value;
         outputan.value = inputanBaru;
-        caraKalkulasi.value = inputan.value + "\u00B0 * (5/9) + 32 = " + outputan.value;
+        if (inputan.value != "") {
+            caraKalkulasi.value = inputan.value + "\u00B0 * (5/9) + 32 = " + outputan.value;
+        }
+
+        // bagian penjelasan
+        penjelasan.innerHTML = "<h2>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2><hr><p>Suhu <span class='simbol'>S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span class='simbol'>S</span> dalam derajat Celcius (&deg;C) kali <span class='angka'>9/5</span> tambah <span class='angka'>32</span>.</p>";
+
+        //bagian rumus
+        rumus.innerHTML = "<div class='rumus'>               <p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 9/5) + 32</p><p>atau</p><p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 1.8) + 32</p></div>"
     }
 }
 
